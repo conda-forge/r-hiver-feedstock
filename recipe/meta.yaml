@@ -1,4 +1,4 @@
-{% set version = '0.3.42' %}
+{% set version = "0.3.56" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/HiveR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/HiveR/HiveR_{{ version }}.tar.gz
-  sha256: 8e58ed6dd7e53e43a176c2ead4e309ed195c948b63bd34838f67de104a300026
+  sha256: aaf32e8da24fd1162bb2769dc2cfba699a7765792b560e38da89bb1bbde74506
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,13 +48,10 @@ test:
 about:
   home: https://github.com/bryanhanson/HiveR
   license: GPL-3
-  summary: 'Creates and plots 2D and 3D hive plots. Hive plots are a unique method of displaying
-    networks of many types in which node properties are mapped to axes using meaningful
-    properties rather than being arbitrarily positioned.  The hive plot concept was
-    invented by Martin Krzywinski at the Genome Science Center (www.hiveplot.net/).  Keywords:
+  summary: 'Creates and plots 2D and 3D hive plots. Hive plots are a unique method of displaying networks of many types in which node properties are mapped to axes using meaningful properties rather than being arbitrarily positioned.  The hive plot concept was invented by Martin Krzywinski at the Genome Science Center (www.hiveplot.net/).  Keywords:
     networks, food webs, linnet, systems biology, bioinformatics.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
