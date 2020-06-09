@@ -1,4 +1,4 @@
-{% set version = "0.3.56" %}
+{% set version = "0.3.63" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/HiveR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/HiveR/HiveR_{{ version }}.tar.gz
-  sha256: aaf32e8da24fd1162bb2769dc2cfba699a7765792b560e38da89bb1bbde74506
+  sha256: 83c16ab55324f51ac3f5d0377244fddcb7a009ae30cee4dd67270035c42422ee
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
