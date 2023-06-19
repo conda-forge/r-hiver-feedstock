@@ -1,11 +1,11 @@
-About r-hiver
-=============
+About r-hiver-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-hiver-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/bryanhanson/HiveR
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-hiver-feedstock/blob/main/LICENSE.txt)
 
 Summary: Creates and plots 2D and 3D hive plots. Hive plots are a unique method of displaying networks of many types in which node properties are mapped to axes using meaningful properties rather than being arbitrarily positioned.  The hive plot concept was invented by Martin Krzywinski at the Genome Science Center (www.hiveplot.net/).  Keywords: networks, food webs, linnet, systems biology, bioinformatics.
 
